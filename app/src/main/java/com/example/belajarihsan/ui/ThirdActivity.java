@@ -40,8 +40,7 @@ public class ThirdActivity extends AppCompatActivity implements UserAdapter.OnIt
       ivBack2 = findViewById(R.id.back2);
       ivBack2.setOnClickListener(new View.OnClickListener() {
          @Override
-         public void onClick(View view) {
-            onBackPressed();
+         public void onClick(View view) {onBackPressed();
          }
       });
 

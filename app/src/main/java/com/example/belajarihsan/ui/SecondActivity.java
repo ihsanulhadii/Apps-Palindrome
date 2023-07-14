@@ -58,10 +58,11 @@ public class SecondActivity extends AppCompatActivity {
    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
       super.onActivityResult(requestCode, resultCode, data);
 
-      if(data.hasExtra("name")){
-         String nameSelected = data.getStringExtra("name");
-         selectUserName.setText(nameSelected);
+      if(resultCode==RESULT_OK){
+         if(data.hasExtra("name")){
+            String nameSelected = data.getStringExtra("name");
+            selectUserName.setText(nameSelected);
+         }
       }
    }
 }
-

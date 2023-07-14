@@ -32,9 +32,6 @@
         <activity android:name=".ui.ThirdActivity"/>
 
 
-
-        <activity android:name=".ui.HomeActivity"/>
-        <activity android:name=".ui.ActivityRegister"/>
     </application>
 
 </manifest>
